@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: Exchange Rates
+  data:
+    rest:
+      base-path: /api
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: password
+    driver-class-name: org.h2.Driver
+
+fixer:
+  apiKey: 89d811c029d2e8cce05e6c78c48b3d61
+  url: http://data.fixer.io/api/latest?access_key={API_KEY}
+#  can be use only with paid account on fixer.io
+#  url: https://data.fixer.io/api/latest?access_key={API_KEY}&base={BASE_CURRENCY}

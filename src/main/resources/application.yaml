@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: Exchange Rates
+  data:
+    rest:
+      base-path: /api
+
+  datasource:
+    url: jdbc:postgresql://postgres:5432/exchangerates
+    username: jefialtes
+    password: ghbkerb!@3
+    driver-class-name: org.postgresql.Driver
+
+fixer:
+  apiKey: 89d811c029d2e8cce05e6c78c48b3d61
+  url: http://data.fixer.io/api/latest?access_key={API_KEY}
+#  can be use only with paid account on fixer.io
+#  url: https://data.fixer.io/api/latest?access_key={API_KEY}&base={BASE_CURRENCY}
